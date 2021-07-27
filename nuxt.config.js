@@ -1,4 +1,5 @@
 export default {
+  ssr:false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'formation_nuxt',
@@ -24,6 +25,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/vuex-persist', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
